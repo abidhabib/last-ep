@@ -1,0 +1,125 @@
+:root {
+    --e-global-color-text: #2B2B2B;
+    --e-global-color-accent: #ff9800;
+    --e-global-typography-accent-font-family: "Roboto";
+  }
+.home_container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    object-fit: cover;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.home {
+    backdrop-filter: brightness(0.6);
+    width: 100%;
+    height: 100%  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_content{
+    /* width: ; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -10%;
+    margin-top: 10%;
+}
+.home_content h1{
+    color: #ff9800;
+    font-weight: 900;
+font-size: 65px;
+text-align: left;
+}
+.home_content p{
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+.btn-h{
+    background-color: var(--e-global-color-accent );
+   font-family: var(--e-global-typography-accent-font-family);
+    font-size: 18px;
+    /* font-weight: 600; */
+    line-height: 22px;
+    color: #2B2B2B;
+    background-color: var(--e-global-color-accent );
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: var(--e-global-color-accent );
+    border-radius: 35px 35px 35px 35px;
+    padding: 12px 35px 12px 35px;
+    width:200px;
+    margin-top: 20px;
+}
+.btn-h:hover{
+
+    background-color: #ffffff;
+border: 1px solid #ff9800;
+transition: all .5s ease-in-out;
+color: #ff9800;
+font-weight:500;
+
+}
+@media (max-width: 820px) {
+.btn-h{
+
+    background-color: var(--e-global-color-accent );
+    font-family: var(--e-global-typography-accent-font-family);
+     font-size: 18px;
+     /* font-weight: 600; */
+     color: #2B2B2B;
+     background-color: var(--e-global-color-accent );
+     border-style: solid;
+     border-width: 2px 2px 2px 2px;
+     border-color: var(--e-global-color-accent );
+     padding: 12px 35px 12px 35px;
+     width:200px;
+}
+    .home_content > h1{ 
+font-size: 30px; 
+text-align: center;
+  }
+  .home_content > p{
+    line-height: 28px;
+    text-align: center;
+  }
+    .home_container{
+        height: 70vh;
+    }
+    .home_content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px ;
+
+
+    }
+    .home_content{
+        /* width: ; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0%;
+        margin-top: 7%;
+    }
+
+}
